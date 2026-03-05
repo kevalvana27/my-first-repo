@@ -1,7 +1,7 @@
 class Demo{
     public static void main (String [] args){
         System.out.print("this is demo file for keval");
-        System.out.print("this is demo file for keval1");
+        System.out.print("this is demo file for");
        
     }
 
