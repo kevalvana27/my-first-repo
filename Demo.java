@@ -1,8 +1,7 @@
 class Demo{
     public static void main (String [] args){
-        System.out.println("this is demo file for keval");
-        System.out.println("this is demo file for devops");
-        System.out.println("this is UPDATED FILE ");
+        System.out.println("Welcome keval");
+        System.out.println("this is file from git");
        
     }
 
