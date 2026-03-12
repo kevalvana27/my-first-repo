@@ -8,13 +8,13 @@ pipeline {
             }
         }
         
-        stage('check1') {
+        stage('Build') {
             steps {
                bat 'javac Demo.java'
             }
         }
           
-        stage('check2') {
+        stage('Execute') {
             steps {
                bat 'java Demo'
             }
