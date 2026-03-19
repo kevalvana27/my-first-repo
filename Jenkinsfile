@@ -8,17 +8,17 @@ pipeline {
             }
         }
         
-        stage('Build') {
+        stage('Publish') {
             steps {
-               bat 'javac Demo.java'
+                publishHTML ([
+                    allowMissing:true,
+                    alwaysLinkToLastBuild:false,
+                    keepAll:false,
+                    reportDir:'.',
+                    reportFiles:'jenhtml1.html',
+                    reportName:'My html Publish'
+                ])
             }
         }
-          
-        stage('Execute') {
-            steps {
-               bat 'java Demo'
-            }
-        }
-        
     }
 }
